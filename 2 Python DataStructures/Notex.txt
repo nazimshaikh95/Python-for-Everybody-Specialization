@@ -1,0 +1,54 @@
+* type(var) : to get data-type of variable
+* dir(var)  : to see what methods can be applied to variable
+* Mutable => changeable e.g. List,Dictionary
+* Immutable => not changeable e.g. String,Tuples
+* range(prm):
+	returns sequence of numbers from 0(zero) to one less than parameter(prm)
+
+String functions:
+rstrip()
+lstrip()
+strip()
+find()
+startswith()
+endswith()
+
+Files:
+open('file.txt','r')
+read()
+write()
+close()
+
+Lists:	A linear collection of values that stay in order.
+mutable in nature i.e. we can change values of list by using index
+append()
+sort()
+len()
+max()
+min()
+sum()
+string.split() => converts string into List[]
+     1]	i.e. str = "i am nazim"
+	     list = str.split()
+	     print(list)
+	o/p => ['i' , 'am' , 'nazim']
+     2] str = 'first;second;third'
+	list = str.split()	o/p: ['first;second;third']
+	list = str.split(';')   o/p: ['first','second','third']
+IMP : we can split by using any character - ;,/,@,%,&
+
+Dictionary:	dict[key,value] : A 'bag' of values each with its own label.
+	purse = dict()
+	purse['candy'] = 5
+	#pair:	key      value
+	purse['tissue']= 20
+	print(purse)
+	o/p: {'candy':5, 'tissue':20}
+
+get():
+x = counts.get(name,0)
+	i.e. if counts['name'] exist put x = ...  or  if not exist put x = 0 ;
+
+dict.keys()
+dict.values()
+dict.items() :	gives a Tuple('key',value) i.e. key value pair
