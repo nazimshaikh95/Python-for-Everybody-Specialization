@@ -1,0 +1,12 @@
+->try:
+	...........
+  except:
+	...........
+
+->quit()
+->break : get out of the loop/breaks the loop
+->continue : skip rest part of code and continue from start of loop/dont beeak loop
+->Indefinite loop  ::   while True:
+->Definite loop    :: 	for i in [5,4,3,2,1]: 
+->	if largest is None:    //'None' = keyword : matches type and value(both)
+		........
