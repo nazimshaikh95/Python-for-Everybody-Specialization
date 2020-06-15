@@ -1,0 +1,21 @@
+Regular Expression :
+Used for finding string, specific patterns ,etc.
+-->	import re
+	hand = open('mbox-short.txt')
+	for line in hand:
+		line = line.rstrip()
+		if re.search('From :',line):
+			print(line)
+	* re.search('^From :') --> ()to indicate first word of line
+	* ^X.*:		--> if we translate this little regular expression with English, is I'm looking for lines that have an X at the beginning, capital X, followed by any number of characters, followed by a colon. So a colon's not a special character, X is not a special character, but caret is a special character, dot and star are. 
+	* ^__  -  Strts with__
+	* .    -  any character that matches
+	* +    -  one or more charcters
+	* :    -  last character in the match
+	* *    -  any number of characters
+
+IMP : re.findall('\S+@\S+',x)   ==> returns a list.
+
+Greedy Matching :
+	^F.+?:
+	* ?  - dont be greedy
